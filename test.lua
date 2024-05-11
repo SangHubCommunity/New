@@ -47,3 +47,8 @@ button.InputEnded:Connect(function(input)
         dragging = false
     end
 end)
+
+-- Thêm một hàm để đảm bảo rằng biến isOn được đặt lại khi bạn nhấn lại nút
+button.MouseButton1Click:Connect(function()
+    isOn = not isOn
+end)
